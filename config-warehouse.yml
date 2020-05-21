@@ -1,0 +1,16 @@
+spring:
+  thymeleaf:
+    cache: false
+  resources:
+    static-locations: classpath:/static/
+  mvc:
+    static-path-pattern: /static/**
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql:///warehouse2db?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  http:
+    encoding:
+      charset: UTF-8
