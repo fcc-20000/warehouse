@@ -4,6 +4,8 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/warehousedb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: root
+  application:
+    name: cloud-consumer-order80
   thymeleaf:
     cache: false
   resources:
@@ -15,3 +17,6 @@ spring:
 feign:
   hystrix:
     enabled: true
+
+
+
